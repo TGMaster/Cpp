@@ -22,7 +22,7 @@ void main(int arg, char *str[])
 			array[i] = atoi(str[i]);
 		}
 		shiftToEnd(array, i, max);
-		for (int j = 1; i < i; j++)
+		for (int j = 1; j < i; j++)
 			printf("%d ",array[j]);
 		printf("\n");
 	}
