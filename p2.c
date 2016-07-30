@@ -16,7 +16,7 @@ void main(int arg, char *str[])
 	int max = 0, temp, i, array[128];
 	if (arg > 1)
 	{
-		for (int i = 1; i < arg; i++)
+		for (i = 1; i < arg; i++)
 		{
 			max = (max < atoi(str[i])) ? atoi(str[i]) : max;
 			array[i] = atoi(str[i]);
