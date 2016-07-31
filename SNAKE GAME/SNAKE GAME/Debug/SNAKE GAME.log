@@ -1,0 +1,6 @@
+﻿  SNAKE GAME.C
+c:\users\gaurav\desktop\wincodebits.in\projects\vcsg\snake game\snake game\snake game\snake game.c(814): warning C4244: 'function' : conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\gaurav\desktop\wincodebits.in\projects\vcsg\snake game\snake game\snake game\snake game.c(840): warning C4244: 'function' : conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\gaurav\desktop\wincodebits.in\projects\vcsg\snake game\snake game\snake game\snake game.c(866): warning C4244: 'function' : conversion from 'time_t' to 'unsigned int', possible loss of data
+  LINK : C:\Users\Gaurav\Desktop\wincodebits.in\Projects\vcsg\SNAKE GAME\SNAKE GAME\Debug\SNAKE GAME.exe not found or not built by the last incremental link; performing full link
+  SNAKE GAME.vcxproj -> C:\Users\Gaurav\Desktop\wincodebits.in\Projects\vcsg\SNAKE GAME\SNAKE GAME\Debug\SNAKE GAME.exe
