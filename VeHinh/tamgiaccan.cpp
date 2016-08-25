@@ -7,6 +7,7 @@ int main()
     cin>>rows;
     for(i=1;i<=rows;++i)
     {
+        // Lui vao de ve tam giac
         for(space=1;space<=rows-i;++space)
         {
            cout<<"  ";
