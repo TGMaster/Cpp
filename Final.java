@@ -107,28 +107,18 @@ public class TestEmployee {
 		}
 		
 		nhap.close();	
-		
-		float[] arrays = new float[eList.length];
-		String[] names = new String[eList.length];
-		String[] ids = new String[eList.length];
-		for (int i = 0; i < arrays.length; i++) {
-			arrays[i] = eList[i].salary();
-			names[i] = eList[i].getName();
-			ids[i] = eList[i].getID();
-		}
-		
 		System.out.println("Name\tID\tSalary");
 		for (int i = 0; i<n; i++) {
-			System.out.println(names[i] + "\t" + ids[i] + "\t" + arrays[i] + "$");
+			System.out.println(eList[i].getName() + "\t" + eList[i].getID() + "\t" + eList[i].salary() + "$");
 		}
-		List<String> l1 = new LinkedList<String> ();
+		LinkedList<String> l1 = new LinkedList<String> ();
 		for (int i = 0; i < n; i++) {
-			l1.add(names[i] + "\t" + ids[i] + "\t" + arrays[i] + "$");
+			l1.add(eList[i].getName() + "\t" + eList[i].getID() + "\t" + eList[i].salary());
 		}
 		
         BufferedWriter out = new BufferedWriter(new FileWriter("EIS.txt"));
         PrintWriter printer = new PrintWriter(out);
-        printer.print(l1 + "\n");
+        printer.print(l1);
         out.close();
         printer.close();
 	}
