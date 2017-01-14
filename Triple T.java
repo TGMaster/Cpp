@@ -1,6 +1,58 @@
 import java.io.*;
 import java.util.*;
 
+abstract class Employee {
+	private String ID;
+	private String name;
+	
+	public Employee(String a, String b) {
+		this.ID = a;
+		this.name = b;
+	}
+	
+	public String getID() {
+		return ID;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setID(String a) {
+		this.ID = a;
+	}
+	
+	public void setName(String a) {
+		this.name = a;
+	}
+	
+	abstract float salary();
+}
+
+class Engineer extends Employee {
+	private float coe;
+	public Engineer(String a, String b, float c) {
+		super(a, b);
+		this.coe = c;
+	}
+	
+	public float salary() {
+		return coe*300;
+	}
+}
+
+class Freelancer extends Employee {
+	private int hour;
+	public Freelancer(String a, String b, int d) {
+		super(a, b);
+		this.hour = d;
+	}
+	
+	public float salary() {
+		return 3*hour;
+	}
+}
+
 public class TestEmployee {
 	public static void main(String[] args) throws IOException {
 		Scanner nhap = new Scanner(System.in);
