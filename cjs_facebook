@@ -1,0 +1,13 @@
+$(document).ready(function()
+{
+    if(window.location.href.indexOf("m.facebook.com/messages/read/?tid=mid.") != -1)
+    {
+       if($('#see_older a.touchable')[0])
+       {
+         setInterval(function()
+         {
+              $('#see_older .mfsm').click();
+         }, 500);
+     }
+    }
+});
