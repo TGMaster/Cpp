@@ -11,3 +11,7 @@ $(document).ready(function()
      }
     }
 });
+
+//Inspect emote in facebook
+var inputs = document.getElementsByClassName('_39n');
+for(var i=0; i<inputs.length;i++) { inputs[i].click(); }
